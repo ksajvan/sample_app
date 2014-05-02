@@ -11,6 +11,8 @@ SampleApp::Application.routes.draw do
 
   get '/signup'  => 'users#new'
 
+  get '/users'   => 'users#index'
+
   get '/root'    => 'static_pages#home'
   get '/home'    => 'static_pages#home'
   get '/help'    => 'static_pages#help'
